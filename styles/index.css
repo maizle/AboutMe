@@ -1,0 +1,111 @@
+@import './nullstyle.css';
+@import './header.css';
+@import './main.css';
+@import './travels.css';
+@import './write-me.css';
+@import './footer.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;600&display=swap');
+
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background: var(--bg-white, #FFF);
+}
+.header {
+    flex: 1 0 auto;
+    z-index: 10;
+    padding-top: 10px;
+}
+.main {
+    flex: 1 1 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+
+
+
+.title {
+    display: inline-block;
+    color: var(--font-high-emphasis, #25282B);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px; 
+    position: relative;
+    }
+    .title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: calc(50% - 50px);
+    margin: auto;
+    width: 100px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--brand-yellow, #FDC435);
+    }
+
+    .form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .form__label {
+        color: var(--font-high, #25282B);
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+    .form__input {
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid #E8ECF4;
+        background: var(--bg-white, #FFF);
+        margin-bottom: 8px;
+        margin-bottom: 24px;
+    }
+    .form__textarea {
+        width: 100%;
+height: 160px;
+border-radius: 8px;
+border: 1px solid #E8ECF4;
+background: var(--bg-white, #FFF);
+margin-bottom: 24px;
+    }
+
+    .form__button{
+        align-self: flex-end;
+        padding: 8px 24px;
+        text-align: center;
+        border-radius: 8px;
+background: var(--brand-yellow, #FDC435);
+
+    }
+    .form__button a{
+ color: var(--font-high-emphasis, #25282B);
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 500;
+line-height: 150%;
+    }
